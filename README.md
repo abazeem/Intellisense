@@ -3,9 +3,9 @@ Implementation of intellisense using tries
 
 This is a basic JAVA web application which implements intellisense using the data structure trie. 
 
-The jsp file along with html and css files are placed in the 
+The jsp file along with html and css files are placed in the WebContent folder
 The JAVA files are placed in the src folder
-Moreover, the application UI screenshot is placed in the project folder
+Moreover, the application UI screenshot is attached to the project folder
 
 
 Here are the steps to setup code:
