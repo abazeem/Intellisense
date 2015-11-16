@@ -1,0 +1,21 @@
+#container
+{
+	width: 2%;
+}
+
+#outercontainer
+{
+	width: 100%;
+	border: 2px solid lightgrey;
+	padding : 0px 12px!important;
+}
+#textbox
+{
+	width:100%!important;
+}
+
+.middle
+{
+	width : 40%;
+	margin : 0px auto;
+}

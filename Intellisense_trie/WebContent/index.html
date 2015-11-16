@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel = "stylesheet" type ="text/css" href="bootstrap.css" />
+<script type="text/javascript" src = "jquery.js"></script>
+<link rel="stylesheet" type ="text/css" href="styles.css"/>
+<meta charset="ISO-8859-1">
+<title>Index Page</title>
+<script>
+function showHint(str) {
+	document.getElementById("container").innerHTML = "";
+    if (str.length == 0) { 
+        document.getElementById("container").innerHTML = "";
+        return;
+    } else {
+    	$.post("NewFile.jsp",
+    		    { sg: str},
+    		    function(data){
+    		   // 		var text = "";
+    		   // 		var len = data.length;
+    		  //  		for(var i = 0; i<len;i++)
+    		  //  		{
+    		  //  			text += '<p>' + data[i].countries + '</p>';	
+    		    //		}
+    		    //		$('#outercontainer').append = text;
+    		      	document.getElementById("container").innerHTML = data;
+    		    });}}
+</script>
+</head>
+<body>
+<div class = "middle"><b>Enter a country's name: </b></div>
+<form id = "form" class = "middle">
+<input type="text" class = "form-control" placeholder="Enter text" id ="textbox" onkeyup="showHint(this.value)" aria-describedby="basic-addon2">
+<div id = "outercontainer">
+<div id="container">
+</div>
+</div>
+</form>
+</body>
+</html>
