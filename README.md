@@ -23,4 +23,6 @@ http://www.eclipse.org/webtools/jst/components/ws/1.5/tutorials/InstallTomcat/In
 PS- if you are getting any errors such as java facet or cross marks on jre libraries then look online for solutions.
 The fix varies depending on the java versions you have installed in your pc.
 
+Here is the link to the deployed version : https//intellisense-121.appspot.com
+
 ALL THE BEST :)
